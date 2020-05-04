@@ -25,6 +25,6 @@ function active() {
 
 function footer() {
     this.document.getElementById("footer").innerHTML = '<hr>' +
-    '<img src="images/logo.png" alt="W Design Studios" style="width:200px">' +
+    '<img src="images/logo2.png" alt="W Design Studios" style="width:250px">' +
     '&copy; 2020';
 }
