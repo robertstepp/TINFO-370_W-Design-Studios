@@ -1,6 +1,7 @@
 window.onload = function navigation() {
     this.document.getElementById("navigation").innerHTML =
-        '<li id="home"><a href="home.html">Home</a></li>' +
+        '<li id="home"><a href="index.html">Home</a></li>' +
+        '<li id="faq"><a href="faq.html">FAQ</a></li>' +
         '<li id="contactUs"><a href="contactus.html">Contact Us</a></li>' +
         '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>';
         this.active();
