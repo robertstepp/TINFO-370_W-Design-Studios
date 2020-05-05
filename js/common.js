@@ -32,20 +32,30 @@ function footer() {
     '<div id="myModal" class="modal">' +
     '<div class="modal-content">' +
     '<span class="close">&times;</span>' +
-    '<p>Some text in the Modal..</p>' +
+    '<p>This website only contains <u>Informational</u> contents.<br>Use at your own risk.</p>' +
     '</div></div>';
 }
 
 function disclaimer() {
+    var x = document.cookie;
     var modal = document.getElementById("myModal");
     var span = document.getElementsByClassName("close")[0];
-    modal.style.display="block";
-    span.onclick = function() {
-        modal.style.display="none";
-    }
-    window.onclick = function(event) {
-        if (event.target == modal) {
+    const now = new Date();
+    now.setDate(now.getDate() + 1);
+    if (x.indexOf('clicked=') == -1) {
+        modal.style.display="block";
+        span.onclick = function() {
             modal.style.display="none";
+            x = "clicked=true; path=/; Expires=" + now.toUTCString();
+            console.log(x);
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display="none";
+                x = "clicked=true; path=/; Expires=" + now.toUTCString();
+                console.log(x);
+            }
         }
     }
+   
 }

@@ -20,6 +20,9 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    font-size: 30px;
+    text-align: center;
+    color: red;
   }
   
   /* The Close Button */
