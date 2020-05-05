@@ -6,7 +6,7 @@ window.onload = function navigation() {
         '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>';
         this.active();
         this.footer();
-        this.disclaimer();
+        /* this.disclaimer(); */ // Disabled for public use without issues
 }
 
 function active() {
