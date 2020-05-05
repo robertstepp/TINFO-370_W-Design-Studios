@@ -6,6 +6,7 @@ window.onload = function navigation() {
         '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>';
         this.active();
         this.footer();
+        this.disclaimer();
 }
 
 function active() {
@@ -27,5 +28,24 @@ function active() {
 function footer() {
     this.document.getElementById("footer").innerHTML = '<hr>' +
     '<img src="images/logo2.png" alt="W Design Studios" style="width:250px">' +
-    '&copy; 2020';
+    '&copy; 2020' +
+    '<div id="myModal" class="modal">' +
+    '<div class="modal-content">' +
+    '<span class="close">&times;</span>' +
+    '<p>Some text in the Modal..</p>' +
+    '</div></div>';
+}
+
+function disclaimer() {
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    modal.style.display="block";
+    span.onclick = function() {
+        modal.style.display="none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display="none";
+        }
+    }
 }
