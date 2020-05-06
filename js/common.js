@@ -27,7 +27,7 @@ function active() {
 
 function footer() {
     this.document.getElementById("footer").innerHTML = '<hr>' +
-    '<img src="images/logo2.png" alt="W Design Studios" style="width:250px">' +
+    '<img src="images/Transparent.png" alt="W Design Studios" style="width:250px">' +
     '&copy; 2020' +
     '<div id="myModal" class="modal">' +
     '<div class="modal-content">' +
