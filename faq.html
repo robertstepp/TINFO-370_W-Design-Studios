@@ -1,26 +1,124 @@
 <html lang="en-US">
-    <head>
-      <meta charset="UTF-8">
-        <meta name="author" content="Changwoo Choi">
-        <meta name="author" content="Andrew De La Cruz Ferrer">
-        <meta name="author" content="Joshua Le">
-        <meta name="author" content="Thuan Le">
-        <meta name="author" content="Robert Stepp">
-        <title>FAQ</title>
-        <script src="js/common.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    </head>
-    <body>
-        
-        <nav>
-            <!-- Navigation bar filled from common.js -->
-            <ul id="navigation">
-            </ul>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Changwoo Choi">
+    <meta name="author" content="Andrew De La Cruz Ferrer">
+    <meta name="author" content="Joshua Le">
+    <meta name="author" content="Thuan Le">
+    <meta name="author" content="Robert Stepp">
+    <title>FAQ</title>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        .collapse {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
 
-        <div id="mainArea">
-            <footer id="footer"><!-- Footer filled from common.js --></footer>
+        .active .collapse:hover {
+            background-color: #00f;
+        }
+
+        .collapse:before {
+            content: '\02795';
+        }
+        .collapse:after {
+            font-size: 13px;
+            color: #fff;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:before {
+            content: '\2796';
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <!-- Navigation bar filled from common.js -->
+        <ul id="navigation">
+        </ul>
+    </nav>
+
+    <div id="mainArea">
+        <button type="button" class="collapse">&nbsp;&nbsp;What is 3D printing></button>
+        <div class="content">
+            
         </div>
-    </body>
+        <button type="button" class="collapse">&nbsp;&nbsp;What type of filament should I use?</button>
+        <div class="content">
+            <h3>Polylactic Acid (PLA)</h3>
+            <ul>
+                <li>Easy to print</li>
+                <li>Faster to print</li>
+                <li>Low cost</li>
+            </ul>
+            <h3>Polyethylene Terephthalate with Glycol (PETG)</h3>
+            <ul>
+                <li>Resists high temperature</li>
+                <li>Water proof</li>
+            </ul>
+            <h3>Acrylonitrile Butadiene Styrene (ABS)</h3>
+            <ul>
+                <li>Low cost</li>
+                <li>Resists high temperature</li>
+                <li>Wear resistant</li>
+            </ul>
+        </div>
+        <button type="button" class="collapse">&nbsp;&nbsp;How to sanitize?</button>
+        <div class="content">
+            <ul>
+                <li>Wipe down with alcohol swabs or rags with alcohol on it.</li>
+                <li>Clean in hot water with soap</li>
+            </ul>
+        </div>
+        <button type="button" class="collapse">&nbsp;&nbsp;Where to get the files?</button>
+        <div class="content">
+            <ul>
+                <li>Wipe down with alcohol swabs or rags with alcohol on it.</li>
+                <li>Clean in hot water with soap</li>
+            </ul>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapse");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
+        <footer id="footer">
+            <!-- Footer filled from common.js -->
+        </footer>
+    </div>
+</body>
+
 </html>
