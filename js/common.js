@@ -1,8 +1,8 @@
 window.onload = function navigation() {
     this.document.getElementById("navigation").innerHTML =
         '<li id="home"><a href="index.html">Home</a></li>' +
+        '<li id="partners"><a href="partners.html">Partners</a></li>' + 
         '<li id="faq"><a href="faq.html">FAQ</a></li>' +
-        '<li id="contactUs"><a href="contactus.html">Contact Us</a></li>' +
         '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>';
         this.active();
         this.footer();
@@ -16,8 +16,11 @@ function active() {
         case "index":
             document.getElementById("home").setAttribute("id", "active");
             break;
-        case "contactus":
-            document.getElementById("contactUs").setAttribute("id", "active");
+        case "partners":
+            document.getElementById("partners").setAttribute("id", "active");
+            break;
+        case "faq":
+            document.getElementById("faq").setAttribute("id", "active");
             break;
         case "aboutus":
             document.getElementById("aboutUs").setAttribute("id", "active");

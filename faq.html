@@ -27,15 +27,17 @@
             background-color: #00f;
         }
 
-        .collapse:after {
+        .collapse:before {
             content: '\02795';
+        }
+        .collapse:after {
             font-size: 13px;
             color: #fff;
             float: right;
             margin-left: 5px;
         }
 
-        .active:after {
+        .active:before {
             content: '\2796';
         }
 
@@ -58,18 +60,43 @@
     </nav>
 
     <div id="mainArea">
-        <button type="button" class="collapse">What type of filament should I use?</button>
+        <button type="button" class="collapse">&nbsp;&nbsp;What is 3D printing></button>
+        <div class="content">
+            
+        </div>
+        <button type="button" class="collapse">&nbsp;&nbsp;What type of filament should I use?</button>
         <div class="content">
             <h3>Polylactic Acid (PLA)</h3>
-            <p>Reason for PLA</p>
+            <ul>
+                <li>Easy to print</li>
+                <li>Faster to print</li>
+                <li>Low cost</li>
+            </ul>
             <h3>Polyethylene Terephthalate with Glycol (PETG)</h3>
-            <p>Reason for PETG</p>
+            <ul>
+                <li>Resists high temperature</li>
+                <li>Water proof</li>
+            </ul>
             <h3>Acrylonitrile Butadiene Styrene (ABS)</h3>
-            <p>Reason for ABS</p>
+            <ul>
+                <li>Low cost</li>
+                <li>Resists high temperature</li>
+                <li>Wear resistant</li>
+            </ul>
         </div>
-        <button type="button" class="collapse">Title2</button>
+        <button type="button" class="collapse">&nbsp;&nbsp;How to sanitize?</button>
         <div class="content">
-            <p>Internal Content2</p>
+            <ul>
+                <li>Wipe down with alcohol swabs or rags with alcohol on it.</li>
+                <li>Clean in hot water with soap</li>
+            </ul>
+        </div>
+        <button type="button" class="collapse">&nbsp;&nbsp;Where to get the files?</button>
+        <div class="content">
+            <ul>
+                <li>Wipe down with alcohol swabs or rags with alcohol on it.</li>
+                <li>Clean in hot water with soap</li>
+            </ul>
         </div>
 
         <script>
