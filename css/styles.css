@@ -40,7 +40,6 @@
     cursor: pointer;
   }
 
-  /* Joshua Le - About Us Page */
 .column {
   float: left;
   width: 19%;
@@ -107,3 +106,5 @@
 #navigation li:last-child {
   border-right: 4px black solid;
 }
+
+
