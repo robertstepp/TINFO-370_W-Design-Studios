@@ -9,6 +9,56 @@
         <title>About Us</title>
         <script src="js/common.js"></script>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+        <style>
+          .column {
+  float: left;
+  width: 19%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+        </style>
     </head>
     <body>
         
@@ -19,13 +69,7 @@
         </nav>
 
         <div id="mainArea">
-          <br>
-          <br>
-
-
-          
-
-        <h1>About Us</h1>
+          <h1 id="title"></h1>
         <p>We are 5 Information Technology students at the University of Washington Tacoma. Our main goal is to make a positive contribution
             to the community using technology. To do so we envisioned a goal of using the power of 3D printing to help others. Creating an outlet where people
         can find information about using their 3D printers to provide essential medical equipment during this national emergency. </p>
