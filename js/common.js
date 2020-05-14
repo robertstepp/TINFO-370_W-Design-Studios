@@ -1,8 +1,9 @@
 window.onload = function navigation() {
     this.document.getElementById("navigation").innerHTML =
-        '<li id="home"><a href="index.html">Home</a></li>' +
+        '<li id="home"><a href="index.html"><img src="images/Transparent.png" alt="W Design Studios" style="width:250px"></a></li>' +
         '<li id="partners"><a href="partners.html">Partners</a></li>' + 
         '<li id="faq"><a href="faq.html">FAQ</a></li>' +
+        '<li id="faq"><a href="reference.html">References</a></li>' +
         '<li id="aboutUs"><a href="aboutus.html">About Us</a></li>';
         this.active();
         this.footer();
@@ -19,6 +20,8 @@ function active() {
         case "partners":
             document.getElementById("partners").setAttribute("id", "active");
             break;
+        case "referenece":
+            document.getElementById("reference").setAttribute("id", "active");
         case "faq":
             document.getElementById("faq").setAttribute("id", "active");
             break;
