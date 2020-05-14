@@ -40,6 +40,8 @@
     cursor: pointer;
   }
 
+
+
 /* Navigation */
 #navigation li {
   list-style: none;
@@ -58,5 +60,3 @@
 #navigation li:last-child {
   border-right: 4px black solid;
 }
-
-
