@@ -107,4 +107,8 @@
   border-right: 4px black solid;
 }
 
-
+#title {
+  padding-top: 15px; 
+  clear: both; 
+  text-align: center;
+}
