@@ -1,149 +1,158 @@
+<!--<!DOCTYPE html>-->
 <html lang="en-US">
-    <head>
-      <meta charset="UTF-8">
-        <meta name="author" content="Changwoo Choi">
-        <meta name="author" content="Andrew De La Cruz Ferrer">
-        <meta name="author" content="Joshua Le">
-        <meta name="author" content="Thuan Le">
-        <meta name="author" content="Robert Stepp">
-        <title>About Us</title>
-        <script src="js/common.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-        <style>
-          .column {
-  float: left;
-  width: 19%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Changwoo Choi">
+  <meta name="author" content="Andrew De La Cruz Ferrer">
+  <meta name="author" content="Joshua Le">
+  <meta name="author" content="Thuan Le">
+  <meta name="author" content="Robert Stepp">
+  <title>About Us</title>
+  <script src="js/common.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
+  <style>
+    .column {
+      float: left;
+      width: 19%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
 
-.container {
-  padding: 0 16px;
-}
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    .container {
+      padding: 0 16px;
+    }
 
-.title {
-  color: grey;
-}
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+    .title {
+      color: grey;
+    }
 
-.button:hover {
-  background-color: #555;
-}
-        </style>
-    </head>
-    <body>
-        
-        <nav>
-            <!-- Navigation bar filled from common.js -->
-            <ul id="navigation">
-            </ul>
-        </nav>
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
 
-        <div id="mainArea">
-          <h1 id="title"></h1>
-        <p>We are 5 Information Technology students at the University of Washington Tacoma. Our main goal is to make a positive contribution
-            to the community using technology. To do so we envisioned a goal of using the power of 3D printing to help others. Creating an outlet where people
-        can find information about using their 3D printers to provide essential medical equipment during this national emergency. </p>
-        <h1>Meet the Team</h1>
-        <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="images/robert.jpg" style="width:100%"> 
-                <div class="container">
-                  <h2>Robert Stepp</h2>
-                  <p class="title">Student</p>
-                  <p>
-                    Loves to code/program for fun.
-                  </p>
-                  <p>rstepp@uw.edu</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="placeholderpic.png" style="width:100%">  
-                <div class="container">
-                  <h2>Joshua Le</h2>
-                  <p class="title">Student</p>
-                  <p>
-                      Enjoys long walks at the beach.
-                  </p>
-                  <p>jle916@uw.edu </p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="placeholderpic.png" style="width:100%">  
-                <div class="container">
-                  <h2>Thuan Le</h2>
-                  <p class="title">Student</p>
-                    <p>insert info here</p>
-                  <p>thuanl2@uw.edu</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="placeholderpic.png" style="width:100%">  
-                  <div class="container">
-                    <h2>Changwoo Choi</h2>
-                    <p class="title">Student</p>
-                    <p>insert info here</p>
-                    <p>choi618@uw.edu</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="card">
-                    <img src="placeholderpic.png" style="width:100%">  
-                  <div class="container">
-                    <h2>Andrew De La Cruz Ferrer</h2>
-                    <p class="title">Student</p>
-                        <p>insert info here</p>
-                        <p>andre27@uw.edu</p>
-                    <p><button class="button">Contact</button></p>
-                  </div>
-                </div>
-              </div>
+    .button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav id="navBar">
+		<ul id="navigation">
+		</ul>
+	</nav>
+
+  <div id="mainArea">
+    <h1 id="title"></h1>
+    <p>We are 5 Information Technology students at the University of Washington Tacoma. Our main goal is to make a
+      positive contribution
+      to the community using technology. To do so we envisioned a goal of using the power of 3D printing to help others.
+      Creating an outlet where people
+      can find information about using their 3D printers to provide essential medical equipment during this national
+      emergency. </p>
+    <h1>Meet the Team</h1>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="images/robert.jpg" style="width:100%">
+          <div class="container">
+            <h2>Robert Stepp</h2>
+            <p class="title">Student</p>
+            <p>
+              Loves to code/program for fun.
+            </p>
+            <p>rstepp@uw.edu</p>
+            <p><button class="button">Contact</button></p>
           </div>
-            
-            <footer id="footer"><!-- Footer filled from common.js --></footer>
         </div>
-    </body>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="images/placeholderpic.png" style="width:100%">
+          <div class="container">
+            <h2>Joshua Le</h2>
+            <p class="title">Student</p>
+            <p>
+              Enjoys long walks at the beach.
+            </p>
+            <p>jle916@uw.edu </p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="images/placeholderpic.png" style="width:100%">
+          <div class="container">
+            <h2>Thuan Le</h2>
+            <p class="title">Student</p>
+            <p>insert info here</p>
+            <p>thuanl2@uw.edu</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="images/placeholderpic.png" style="width:100%">
+          <div class="container">
+            <h2>Changwoo Choi</h2>
+            <p class="title">Student</p>
+            <p>insert info here</p>
+            <p>choi618@uw.edu</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="images/placeholderpic.png" style="width:100%">
+          <div class="container">
+            <h2>Andrew De La Cruz Ferrer</h2>
+            <p class="title">Student</p>
+            <p>insert info here</p>
+            <p>andre27@uw.edu</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <!-- Footer filled from common.js -->
+    </footer>
+  </div>
+</body>
+
 </html>

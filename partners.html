@@ -1,130 +1,151 @@
+<!DOCTYPE html>
 <html lang="en-US">
-    <head>
-      <meta charset="UTF-8">
-        <meta name="author" content="Changwoo Choi">
-        <meta name="author" content="Andrew De La Cruz Ferrer">
-        <meta name="author" content="Joshua Le">
-        <meta name="author" content="Thuan Le">
-        <meta name="author" content="Robert Stepp">
-        <title>Partners</title>
-        <script src="js/common.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <style>
-          .column {
-  float: left;
-  width: 23%;
-  margin-bottom: 40px;
-  padding: 0 8px;
-}
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Changwoo Choi">
+  <meta name="author" content="Andrew De La Cruz Ferrer">
+  <meta name="author" content="Joshua Le">
+  <meta name="author" content="Thuan Le">
+  <meta name="author" content="Robert Stepp">
+  <title>Partners</title>
+  <script src="js/common.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style>
+    body {
+      text-align: center;
+    }
+    .column {
+      float: left;
+      width: 23%;
+      margin-bottom: 40px;
+      padding: 0 8px;
+    }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
 
-.container {
-  padding: 0 16px;
-}
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: white;
+      height: 600px;
+    }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    .container {
+      padding: 0 16px;
+    }
 
-.title {
-  color: grey;
-}
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+    .title {
+      color: grey;
+    }
 
-.button:hover {
-  background-color: #555;
-}
-        </style>
-    </head>
-    <body>
-        <nav>
-            <!-- Navigation bar filled from common.js -->
-            <ul id="navigation">
-            </ul>
-        </nav>
-        <div id="mainArea">
-        <h1 id="title"></h1>
-        <center>W Design Studios is based off of 5 students from the University of Washington Tacoma trying to make a contribution to the community using technology. We partner up with individuals and groups that understand our goals and make it a reality. We choose to work with others that can offer precise information that we need to answers the questions that we have and also the community as well. We hope to branch out and partner up with others in the future.</center>
-        <H1>Who we are working with</H1>
-        <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="tom1.jpg" style="width:100%"> 
-                <div class="container">
-                  <h2>Matthew E. Tolentino </h2>
-                  
-                  <p>Matthew is an Assistant Professor in the Electrical and Computer Engineering Department at the University of Washington Tacoma. Also a professor within the Computer science graduate program. </p>
-                 
-                  <p><button class="button">Visit Website</button></p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="tom1.jpg" style="width:100%">  
-                <div class="container">
-                  <h2>Bob Landowski</h2>
-                  <p>Bob is the project manager for computer engineering department research projects at the University of Washington Tacoma. Working on many projects such as R&D wireless sensors and networks. 
-                  </p>
-                
-                  <p><button class="button">Visit Website</button></p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="tom1.jpg" style="width:100%">  
-                <div class="container">
-                  <h2>GIX </h2>
-                
-                    <p>Global Innovation Exchange is a program “building the talent that leverages emerging technologies to address local and global challenges.”</p>
-                   
-                    
-                  <p><button class="button">Visit Website</button></p>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="tom1.jpg" style="width:100%">  
-                  <div class="container">
-                    <h2>UW</h2>
-                    
-                    <p>“The UW is one of the world’s preeminent public universities. Our impact on individuals, our region and the world is profound — whether we are launching young people into a boundless future or confronting the grand challenges of our time through undaunted research and scholarship.”</p>
-                   
-                    <p><button class="button" onclick="">Visit Website</button></p>
-                  </div>
-                </div>
-              </div>
-              
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navBar">
+    <!-- Navigation bar filled from common.js -->
+    <ul id="navigation">
+    </ul>
+  </nav>
+  <div id="mainArea">
+    <h1 id="title"></h1>
+    <p>W Design Studios is based off of 5 students from the University of Washington Tacoma trying to make a
+      contribution to the community using technology. We partner up with individuals and groups that understand our
+      goals and make it a reality. We choose to work with others that can offer precise information that we need to
+      answers the questions that we have and also the community as well. We hope to branch out and partner up with
+      others in the future.</p>
+    <H1>Who we are working with</H1>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="images/tom1.jpg" style="width:100%">
+          <div class="container">
+            <h2>Matthew E. Tolentino </h2>
+
+            <p>Matthew is an Assistant Professor in the Electrical and Computer Engineering Department at the University
+              of Washington Tacoma. Also a professor within the Computer science graduate program. </p>
+
+            <p><button class="button">Visit Website</button></p>
           </div>
-            
-            <footer id="footer"><!-- Footer filled from common.js --></footer>
         </div>
-    </body>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="images/tom1.jpg" style="width:100%">
+          <div class="container">
+            <h2>Bob Landowski</h2>
+            <p>Bob is the project manager for computer engineering department research projects at the University of
+              Washington Tacoma. Working on many projects such as R&D wireless sensors and networks.
+            </p>
+
+            <p><button class="button">Visit Website</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="images/gix.svg" style="width:100%">
+          <div class="container">
+            <!--<h2>GIX </h2>-->
+
+            <p>Global Innovation Exchange is a program “building the talent that leverages emerging technologies to
+              address local and global challenges.”</p>
+
+
+            <p><button class="button" onclick="parent.open('https://gixnetwork.org/')">Visit Website</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="images/UW.png" style="width:100%">
+          <div class="container">
+            <!--<h2>UW</h2>-->
+
+            <p>“The UW is one of the world’s preeminent public universities. Our impact on individuals, our region and
+              the world is profound — whether we are launching young people into a boundless future or confronting the
+              grand challenges of our time through undaunted research and scholarship.”</p>
+
+            <p><button class="button" onclick="parent.open('https://washington.edu')">Visit Website</button></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer id="footer">
+      <!-- Footer filled from common.js -->
+    </footer>
+  </div>
+</body>
+
 </html>
